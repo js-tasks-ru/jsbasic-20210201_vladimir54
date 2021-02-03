@@ -4,5 +4,11 @@
  * @returns {boolean}
  */
 function checkSpam(str) {
-  // ваш код...
+  	let loStr = str.toLowerCase() 
+	if(loStr.includes("1xbet") || loStr.includes("xxx")){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
