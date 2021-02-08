@@ -27,7 +27,7 @@ describe('2-module-1-task', () => {
       John: 1000,
       Ann: 1600,
       Pete: 1300,
-      //Bob: NaN,
+      Bob: NaN,
       Peter: Infinity,
       Ivan: -Infinity,
       month: 'December',
