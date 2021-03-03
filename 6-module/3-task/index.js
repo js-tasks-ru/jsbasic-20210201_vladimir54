@@ -6,8 +6,6 @@ export default class Carousel {
     this.render();
     this.b = 0;
     this.num = 0;
-    //this.slides = document.querySelector(".carousel__slide");
-    //this.attr = this.slides.getAttribute("data-id");
   }
 
   render() {
@@ -56,12 +54,7 @@ export default class Carousel {
 
 
     if (event.target.className === 'carousel__button' || parent.className === 'carousel__button' ) {
-
-
-      for(let i=0; i<=slides.length-1; i++){
         attr = slides[this.num].dataset.id;
-      }
-
       const ev = new CustomEvent("product-add", {
         detail: attr, // Уникальный идентификатора товара из объекта слайда
         bubbles: true // это событие всплывает - это понадобится в дальнейшем
